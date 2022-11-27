@@ -184,18 +184,17 @@ void loop() {
           if (Firebase.getString(firebaseData, "phone/rele1")) {
             if (firebaseData.stringData() == "auto") {
               if (t > w) {
-                digitalWrite(14, LOW);
+                digitalWrite(16, LOW);
               } else {
-                digitalWrite(14, HIGH);
+                digitalWrite(16, HIGH);
               }
             }
             if (firebaseData.stringData() == "on") {
-              digitalWrite(14, LOW);
+              digitalWrite(16, LOW);
             }
             if (firebaseData.stringData() == "off") {
-              digitalWrite(14, HIGH);
+              digitalWrite(16, HIGH);
             }
-            
           }
         }
       }
